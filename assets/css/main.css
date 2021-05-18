@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } 
+ul.list-spaces li{ margin-bottom:10px; }
+.container-full { margin: 0 auto; width: 100%; }
+.top-space { margin-top: 1000px; }
+.top-margin { margin-top:20px; }
+
+.footer { background: #191919; padding: 15px 0; color: #777; font-size: 12px; }
+	.footer a { color: #aaa; }
+		.footer a:hover { color: #fff; }
+		.footer p { margin: 0; }	
+	
+	.yukarikaydir {
+    display:none;
+    background-color:#FF8C00;
+    padding:1em;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    text-decoration:none;
+    color:#000000;
+	border-radius: 50%;
+}	
+
+.yukarikaydir:hover {
+    color: #FF8C00;
+    background-color: #232323;
+    border: 2px solid #FF8C00;
+}	
