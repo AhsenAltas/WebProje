@@ -1,0 +1,80 @@
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Mesaj</title>	
+
+<script type="text/javascript">
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") return;
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=", 2);
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) parms[n] = [];
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
+$("document").ready(function(){
+      var pathname = window.location.href
+   var veriler = parseURLParams(pathname)
+   console.log(veriler)
+
+  document.getElementById("name").innerHTML=veriler.name ;
+  document.getElementById("mail").innerHTML=veriler.mail ;
+  document.getElementById("cinsiyet").innerHTML=veriler.cinsiyet ;
+  document.getElementById("comments").innerHTML=veriler.comments ;
+	    
+});
+</script>
+
+<style>
+	.form {
+	width:622;
+	border:3px black
+	}
+	body{
+	background: #ffffff url("http://www.stickpng.com/assets/images/58f3750ea4fa116215a9240b.png") no-repeat right top;
+	}
+	</style>
+</head>
+	
+	<body>
+	<div class="form">
+     
+	<table >
+		 <tr>
+		 <th>ADINIZ SOYADINIZ:</th>
+		 <td>
+		 <p id="name"></p></td>
+		 </tr
+		 
+		 <tr>
+		 <th>MAİL ADRESİNİZ:</th>
+		 <td><p id="mail"></p></td>
+		 </tr>
+		  <tr>
+		 <th>CİNSİYETİNİZ:</th>
+		 <td><p id="cinsiyet"></p></td>
+		 </tr>
+		   
+		   <tr>
+		 <th>MESAJ:</th>
+		 <td><p id="comments"></p></td>
+		 </tr>
+	</table>
+	</div>
+	
+	<a href="iletisim.html"><button onclick="iletisim.html" type="submit">Geri Dön</button></a>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+  a{color:white; text-decoration:none;}
+	a:visited{color:white; text-decoration:none;}
+	a:hover{color:white; text-decoration:none;}
+	a:active{color:white; text-decoration:none;}
+
+.yanMenu ul {
+margin:0px;
+padding:0px;
+list-style:none; 
+width:150px;
+border-bottom:1px solid red;
+
+}
+
+.yanMenu li {
+position:relative;
+}
+
+.yanMenu li ul {
+position:absolute; 
+display:none; 
+left:149px; 
+top:0px; 
+}
+
+.yanMenu li:hover ul {display:block; }
+
+.yanMenu li a {
+text-color:white;
+display:block;
+background-color:red;
+border:1px solid white;
+border-bottom:0;
+padding:5px;
+}
+
+.yanMenu li a:hover {
+background-color:white;
+color:red;
+}
+
+
+#main{
+	display: table;
+	height: %100;
+	width: %100;
+}
+#sol{ 	display: table-cell;
+width:%20;
+vertical-align: top;}
+#sağ{display: table-cell;
+padding-left: 20em;
+padding-right:20em;
+margin:5em;
+padding-top:5em;
+width:%80;
+vertical-align: top;
+}
+
+    body {
+      text-align: center;
+      background: url("https://i.hizliresim.com/nQ1aY0.jpg");
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: helvetica, sans-serif;
+    }
+    p {
+	color:#191970;
+      font-size: 26px;
+      padding: 7px;
+    }
+	form p{
+		text-align:left;
+	}
+	p select{
+	 font-size: 15px;
+	 background: red;
+     color: white; 
+	 padding:0.5em;
+	 border-radius: 8px;
+	}
+    input {
+      border: 0.1  px;
+	  border-radius: 8px;
+	  border-style: dashed;
+	  border-color:#6495ED;
+      padding: 15px;
+      font-size: 18px;
+    }
+    button[type="submit"] {
+      background: red;
+      color: white; 
+	 padding:1em;
+	 border-radius: 8px;
+    }
+	
+	
+    img { margin 20px;
+	height:auto;
+		max-width:20%;
+		border: 7px solid white;
+      border-radius: 20px;
+	}

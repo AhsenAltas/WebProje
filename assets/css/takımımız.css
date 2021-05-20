@@ -1,0 +1,53 @@
+  header {
+      text-align: center;
+      background-color:white;
+      background-size: cover;
+      color: white;
+	  font-family: helvetica, sans-serif;
+    }
+    a { text-decoration: none;
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+		height:auto;
+		max-width:20%;
+      margin: 2em 0em 0em 2em;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: linear-gradient(blue, red);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+	  
+    }
+    
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+	  
+	  table p{
+	  text-align:center;
+    }
+	
+	
+	img{
+	float:right;
+	width: 600px; height: 400px;}
+	
+	div sol{
+	float:left;
+	font-family:sans-serif;}

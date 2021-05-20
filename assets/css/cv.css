@@ -1,0 +1,30 @@
+   body {
+      text-align: center;
+      background: url("https://i.hizliresim.com/y6bvdy.jpg");
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: helvetica, sans-serif;
+    }
+    p {
+	color:black;
+      font-size: 26px;
+      padding: 7px;
+    }
+    input {
+      border: 0;
+      padding: 15px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    img { 
+	margin: 20px;
+	height:auto;
+	max-width:10%;
+	border: 2px solid white;
+    border-radius: 1000px;
+	
+	}

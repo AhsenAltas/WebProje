@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <title>İletişim</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript"></script>
+	<link rel="stylesheet"  href="assets/css/iletisim.css" />
+	
+	
+</head>
+<body>
+<div id="main">
+
+<div id="sol" class="yanMenu">
+<ul>
+<li><a href="#">Geri Dön</a>
+<ul>  
+<li><a href="index.html">Anasayfa</a></li>
+<li><a href="cv.html">Hakkımda</a></li>
+<li><a href="memleketim.html">Memleketim</a></li>
+<li><a href="takim.html">Takımımız</a></li>
+</ul>
+</div>
+
+<div id="sağ">
+
+
+<form method="get" action="action.html">
+<p>
+<label><b>İSMİNİZ :</b>
+<input type="text" name="name" placeholder="İsminizi Giriniz" required>
+</label> 
+</p>
+<p>
+<label><b>MAİL ADRESİNİZ :</b>
+<input type="email" name="mail" placeholder="Mail Adresinizi Giriniz" required>
+</label>
+</p>
+<p>
+<label><b>CİNSİYETİNİZ :</b>
+<select>
+  <option name="cinsiyet" value="beyfendi">Erkek</option>
+  <option  name="cinsiyet" value="hanim">Kadın</option>
+  <option  name="cinsiyet" value="diger">Diğer</option>
+</select>
+</p>  
+<p>
+<label><b>AÇIKLAMA : </b>
+<textarea name="comments" rows="4" cols="50" maxlength="500"></textarea>
+</label>
+</p>
+<p><button type="submit" id="btnGonder" onclick="gonder()">Gönder</button></p>
+<p><button type="submit" id="btnTemizle" onclick="temizle()">Temizle</button></p>
+</form>
+  
+  
+  
+  </div>
+  </div>
+</body>
