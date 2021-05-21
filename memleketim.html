@@ -15,13 +15,15 @@
 <body>
   <header>
    
-    <h1 id="1">Memleketim Karabük</h1>
+  
     <ul>
       <li><a href="index.html">Anasayfa</a></li>
       <li><a href="cv.html">Hakkımda</a></li>
       <li><a href="memleketim.html">Memleketim</a></li>
 	  <li><a href="takim.html">Takımımız</a></li>
-	   <li><a href="iletisim.html">İletisim</a></li>
+	  <li><a href="iletisim.html">İletisim</a></li>
+	  <li><a href="ilgialani.html">İlgi Alanlarım</a></li>
+	  <li><a class="btn" href="signin.html">ÜYE GİRİŞİ </a></li>
     </ul>
   </header>
   <div id="outer-container">
@@ -35,26 +37,6 @@
 <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 
 </div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
 
 		<img alt="Karabük" src="https://i.sozcu.com.tr/wp-content/uploads/2018/05/iecrop/safranbolu-gezilecek-yerler_16_9_1527317492.jpg ">
 		<br>
@@ -77,7 +59,7 @@ function showDivs(n) {
 		<a href="takim.html"><img src="http://i.milliyet.com.tr/Skorer600x298/2018/08/13/karabukspor-da-lisans-sikintisi-16-transfer-oynayamiyor--12122230.Jpeg"></a>
 	</div>
 	<div id="content">
-	
+	 <center> <h1 id="1">Memleketim Karabük</h1> </center>
   <article>
     <h2 >KARABÜK TARİHÇESİ</h2>
     <p>Antik Devirde "Paflagonya" (Paphlagonia) olarak adlandırılan bölgenin sınırları içinde yer alan ve yerleşimin erken bronz devrinde başladığı Karabük ve çevresi, Hititlerin; M 1200 göçleriyle yıkılmasından sonra Frig etkisi altına girmiş, M..V ve IV.yüzyıllar arasında ise Pers egemenliği altında kalmıştır. Bölgede M..64 tarihinden itibaren ise Romalıların egemenliği görülmüştür.
@@ -117,5 +99,7 @@ Karabük, 6 Haziran 1995 gün ve 22305 sayılı Resmi Gazetede yayımlanan 550 s
   <iframe id="4" class="w-100 p-3 map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768521.5406379426!2d32.0035192011713!3d41.199161064284375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409cab786b5f2935%3A0x134acf175b916db8!2zS2FyYWLDvGs!5e0!3m2!1str!2str!4v1556993649551!5m2!1str!2str"  frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </div>
+<script src="assets/js/karabuk.js"></script>
+
 </body>
 </html>

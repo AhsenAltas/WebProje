@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset=" utf-8">
+<title> Giriş Yap </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" type="text/css" href="assets/css/signin.css">
+
+</head>
+
+<body>
+	<header>
+	<center>
+    <ul>
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="cv.html">Hakkımda</a></li>
+      <li><a href="memleketim.html">Memleketim</a></li>
+	  <li><a href="takim.html">Takımımız</a></li>
+	  <li><a href="iletisim.html">İletisim</a></li>
+	  <li><a href="ilgialani.html">İlgi Alanlarım</a></li>
+	  <li><a class="btn" href="signin.html">ÜYE GİRİŞİ </a></li>
+    </ul>
+	</center>
+  </header>
+	<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" id="login">
+			<ol class="breadcrumb">
+			<li><a href="index.html">Ana Sayfa</a></li>
+			<li class="active">Üye Girişi</li>
+		</ol>
+		<h3 class="text-center text-white pt-5"></h3>
+			<div class="container">
+				<div id="login-row" class="row justify-content-center align-items-center">
+					<div id="login-column" class="col-md-6">
+						<div id="login-box" class="col-md-12">
+							<form id="login-form" class="form" action="assets/php/signin.php" method="post"
+							onsubmit="return islemGonder()">
+							<h3 class="text-center">Giriş Yap</h3>
+							<div class="form-group">
+								<label for="mail" >Mail: <span class="text-danger">*</span></label><br>
+								<input type="text" name="username" id="username" class="form-control">
+
+							</div>
+							<div class="form-group">
+								<label for="sifre" >Şifre: <span class="text-danger">*</span></label><br>
+								<input type="text" name="password" id="password" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="submit" name="submit" class="btn btn-info btn-md" value="Gönder">
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<script type="text/javascript" src="assets/js/Login.js"></script>
+	<div>
+			<span hidden id="mailuyari"></span>
+			<span hidden id="sifreUyari"></span>
+			<span hidden id="mailuyariBos"></span>
+	</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>‪
+</body>
+
+</html>

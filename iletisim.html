@@ -1,13 +1,17 @@
 <!DOCTYPE html>
+<html lang="tr">
 <head>
+<meta charset=" utf-8">
   <title>İletişim</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript"></script>
+  	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet"  href="assets/css/iletisim.css" />
-	
-	
+
 </head>
 <body>
 <div id="main">
@@ -16,20 +20,21 @@
 <ul>
 <li><a href="#">Geri Dön</a>
 <ul>  
-<li><a href="index.html">Anasayfa</a></li>
-<li><a href="cv.html">Hakkımda</a></li>
-<li><a href="memleketim.html">Memleketim</a></li>
-<li><a href="takim.html">Takımımız</a></li>
+	<li><a href="index.html">Anasayfa</a></li>
+	<li><a href="cv.html">Hakkımda</a></li>
+	<li><a href="memleketim.html">Memleketim</a></li>
+	<li><a href="takim.html">Takımımız</a></li>
+	<li><a href="ilgialani.html">İlgi Alanlarım</a></li>
+	<li><a class="btn" href="signin.html">ÜYE GİRİŞİ </a></li>
 </ul>
 </div>
 
 <div id="sağ">
+<form action="assets/php/iletisim.php" method="POST" >
 
-
-<form method="get" action="action.html">
 <p>
 <label><b>İSMİNİZ :</b>
-<input type="text" name="name" placeholder="İsminizi Giriniz" required>
+<input type="text" name="ad" placeholder="İsminizi Giriniz" required>
 </label> 
 </p>
 <p>
@@ -39,23 +44,101 @@
 </p>
 <p>
 <label><b>CİNSİYETİNİZ :</b>
-<select>
-  <option name="cinsiyet" value="beyfendi">Erkek</option>
-  <option  name="cinsiyet" value="hanim">Kadın</option>
-  <option  name="cinsiyet" value="diger">Diğer</option>
-</select>
-</p>  
+	<input type="radio" id="erkek" name="cinsiyet" value="Erkek" > Erkek
+	<input type="radio" id="kadin" name="cinsiyet" value="Kadın"> Kadın
+	<input type="radio" id="diger" name="cinsiyet" value="Diğer"> Diğer
+</p> 
+<p>
+<label><b>DOĞUM TARİHİNİZ :</b> 
+<select id="gun" name="tarihGun" >
+							<option value="gun">Gün</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+
+						<select id="ay" name="tarihAy" >
+							<option value="ay">Ay</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+
+
+						<select id="yil" name="tarihYil" >
+							<option value="yil">Yıl</option>
+							<option value="1980">1980</option>
+							<option value="1981">1981</option>
+							<option value="1982">1982</option>
+							<option value="1983">1983</option>
+							<option value="1984">1984</option>
+							<option value="1985">1985</option>
+							<option value="1986">1986</option>
+							<option value="1987">1987</option>
+							<option value="1988">1988</option>
+							<option value="1989">1989</option>
+							<option value="1990">1990</option>
+							<option value="1991">1991</option>
+							<option value="1992">1992</option>
+							<option value="1993">1993</option>
+							<option value="1994">1994</option>
+							<option value="1995">1995</option>
+							<option value="1996">1996</option>
+							<option value="1997">1997</option>
+							<option value="1998">1998</option>
+							<option value="1999">1999</option>
+							<option value="2000">2000</option>
+						</select>
+ </p> 
 <p>
 <label><b>AÇIKLAMA : </b>
-<textarea name="comments" rows="4" cols="50" maxlength="500"></textarea>
+<textarea name="mesaj" rows="4" cols="50" maxlength="500" required></textarea>
 </label>
 </p>
-<p><button type="submit" id="btnGonder" onclick="gonder()">Gönder</button></p>
-<p><button type="submit" id="btnTemizle" onclick="temizle()">Temizle</button></p>
+<p><button type="submit" id="btnGonder" onclick="gonder()">Gönder</button>  
+<button id="buton" type="submit" value="Temizle" onclick="islemTemizle()">Temizle</button></p>
 </form>
-  
-  
-  
   </div>
   </div>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="assets/js/iletisim.js"></script>
 </body>
+</html>
