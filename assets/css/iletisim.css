@@ -48,6 +48,7 @@ color:red;
 #sol{ 	display: table-cell;
 width:%20;
 vertical-align: top;}
+
 #sağ{display: table-cell;
 padding-left: 20em;
 padding-right:20em;
@@ -88,13 +89,12 @@ vertical-align: top;
       padding: 15px;
       font-size: 18px;
     }
-    button[type="submit"] {
+    button {
       background: red;
       color: white; 
 	 padding:1em;
 	 border-radius: 8px;
     }
-	
 	
     img { margin 20px;
 	height:auto;

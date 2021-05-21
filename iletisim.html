@@ -3,14 +3,12 @@
 <head>
 <meta charset=" utf-8">
   <title>İletişim</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet"  href="assets/css/iletisim.css" />
+			
 
 </head>
 <body>
@@ -30,28 +28,28 @@
 </div>
 
 <div id="sağ">
-<form action="assets/php/iletisim.php" method="POST" >
+<form id="formcuk" action="assets/php/iletisim.php" method="POST" >
 
 <p>
 <label><b>İSMİNİZ :</b>
-<input type="text" name="ad" placeholder="İsminizi Giriniz" required>
+<input type="text" id="ad" name="ad" placeholder="İsminizi Giriniz" required>
 </label> 
 </p>
 <p>
 <label><b>MAİL ADRESİNİZ :</b>
-<input type="email" name="mail" placeholder="Mail Adresinizi Giriniz" required>
+<input type="email" id="mail" name="mail" placeholder="Mail Adresinizi Giriniz" required>
 </label>
 </p>
 <p>
 <label><b>CİNSİYETİNİZ :</b>
-	<input type="radio" id="erkek" name="cinsiyet" value="Erkek" > Erkek
+	<input type="radio" id="erkek" name="cinsiyet" value="Erkek" required> Erkek
 	<input type="radio" id="kadin" name="cinsiyet" value="Kadın"> Kadın
 	<input type="radio" id="diger" name="cinsiyet" value="Diğer"> Diğer
 </p> 
 <p>
 <label><b>DOĞUM TARİHİNİZ :</b> 
 <select id="gun" name="tarihGun" >
-							<option value="gun">Gün</option>
+							<option id="dgGun" value="gun">Gün</option>
 							<option value="01">01</option>
 							<option value="02">02</option>
 							<option value="03">03</option>
@@ -86,7 +84,7 @@
 						</select>
 
 						<select id="ay" name="tarihAy" >
-							<option value="ay">Ay</option>
+							<option id="dgAy" value="ay">Ay</option>
 							<option value="01">01</option>
 							<option value="02">02</option>
 							<option value="03">03</option>
@@ -103,7 +101,7 @@
 
 
 						<select id="yil" name="tarihYil" >
-							<option value="yil">Yıl</option>
+							<option id="dgYil" value="yil">Yıl</option>
 							<option value="1980">1980</option>
 							<option value="1981">1981</option>
 							<option value="1982">1982</option>
@@ -129,16 +127,22 @@
  </p> 
 <p>
 <label><b>AÇIKLAMA : </b>
-<textarea name="mesaj" rows="4" cols="50" maxlength="500" required></textarea>
+<textarea id="mesaj" name="mesaj" rows="4" cols="50" maxlength="500" required></textarea>
 </label>
 </p>
 <p><button type="submit" id="btnGonder" onclick="gonder()">Gönder</button>  
-<button id="buton" type="submit" value="Temizle" onclick="islemTemizle()">Temizle</button></p>
+<button id="buton" type="button" value="Temizle" onclick="islemTemizle()">Temizle</button></p>
 </form>
+
   </div>
   </div>
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="assets/js/iletisim.js"></script>
+	<script <script type="text/javascript" src="assets/js/iletisim.js"></script></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
