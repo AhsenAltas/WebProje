@@ -1,3 +1,4 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
 background-color:white;
 background-size: cover;
     header {
@@ -10,19 +11,25 @@ background-size: cover;
 
     ul {
       padding: 10px;
-      background: #dea0fd;
+      background: #ccccff;
     }
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
     }
 
+ 
+	.body{
+		
+		font-family: 'montserrat',sans-serif;
+		color: #fff;}
+
    .container  {
     margin-top: 120px;
     max-width: 600px;
     height: 320px;
     border: 1px solid #ff0066;
-    background-color: #EAEAEA;
+    
   }
  .container {
     padding: 20px;
@@ -30,3 +37,74 @@ background-size: cover;
    .container  {
     margin-top: -85px;
   }
+  
+  .app{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0, .7);
+    height: 100%;   /*  height: 100vh;  */
+	}
+	
+	.kosu{
+    float: left;
+    overflow: hidden;
+    width: 50%;
+	background-color:#ffffe6
+	}
+
+	.kosu p{
+		background-color:#98FB98
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.city{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px rgba(0,0,0, .8);
+
+}
+
+	.temp{
+		font-size: 70px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		text-shadow: 1px 5px rgba(0,0,0, .1);
+
+	}
+
+	.desc{
+		font-size: 25px;
+		font-style: italic;
+		text-shadow: 1px 3px rgba(0,0,0, .8);
+		margin-bottom: 10px;
+	}
+
+	.minmax{
+		font-size: 24px;
+		text-shadow: 1px 3px rgba(0,0,0, .8);
+	}
+
+
+	.zoom:hover {
+	  -ms-transform: scale(1.5); /* IE 9 */
+	  -webkit-transform: scale(1.5); /* Safari 3-8 */
+	  transform: scale(1.5); 
+	}
+
+	img{
+	margin-center;
+	width: 600px; height: 400px;}
+	img {
+		height:auto;
+		max-width:20%;
+      margin: 2em 0em 0em 2em;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+	div sol{
+	float:left;
+	font-family:sans-serif;}

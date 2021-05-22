@@ -10,7 +10,7 @@ background-size: cover;
 
     ul {
       padding: 10px;
-      background: #4f4f4f;
+      background: #0099cc;
     }
     li {
       display: inline;
@@ -21,12 +21,85 @@ background-size: cover;
     margin-top: 120px;
     max-width: 600px;
     height: 320px;
-    border: 1px solid #ff0066;
+    border: 1px solid #0099cc;
     background-color: #EAEAEA;
+	 padding: 20px;
+	  margin-top: -85px;
   }
- .container {
-    padding: 20px;
-  }
-   .container  {
-    margin-top: -85px;
-  }
+ 
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+	}
+	.wide{ height:20em; width:40em;
+	}
+	.sol{
+	margin-left:5em;}
+	.wideImg{ height:12em; width:40em;
+	}
+	.sag {
+	float:left;
+	}
+
+
+    header {
+      text-align: center;
+      background-color:white;
+      background-size: cover;
+      color: white;
+	  font-family: helvetica, sans-serif;
+    }
+
+
+    h1 {
+      font-size: 70px;
+    }
+    img {
+		height:auto;
+		max-width:20%;
+      margin: auto;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+	h2{
+	text-align: center;
+	color:	#FF7F50;
+	  text-shadow: 3px 2px 	#FF8C00;
+	  letter-spacing: 10px;
+	  
+	}
+	
+	
+	div li{
+	list-style-type: none;
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+	 font-family:sans-serif;
+      background-size: cover;
+	  color: white;
+	}
+	
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+	
+@media screen and (max-width: 900px) {
+	.center{
+		margin: auto;
+         width: 100%;
+	}
+}
