@@ -6,6 +6,39 @@
       color: black;
       font-family: helvetica, sans-serif;
     }
+	background-color:white;
+background-size: cover;
+    header {
+      text-align: center;
+
+    }
+    a { text-decoration: none;
+      color: white;
+    }
+
+    ul {
+      padding: 10px;
+      background: black;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+
+   .container  {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #ff0066;
+    background-color: #EAEAEA;
+  }
+ .container {
+    padding: 20px;
+  }
+   .container  {
+    margin-top: -85px;
+  }
+  
     p {
 	color:black;
       font-size: 26px;
