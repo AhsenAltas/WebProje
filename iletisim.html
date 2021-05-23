@@ -28,21 +28,21 @@
 </div>
 
 <div id="sağ">
-<form id="formcuk" action="assets/php/iletisim.php" method="POST" >
+<form id="formcuk" action="assets/php/iletisim.php" method="POST" onsubmit="return islemGonder()">
 
 <p>
-<label><b>İSMİNİZ :</b>
-<input type="text" id="ad" name="ad" placeholder="İsminizi Giriniz" required>
+<label><b>İSMİNİZ : <span class="text-danger">*</span></b>
+<input type="text" id="ad" name="ad" placeholder="İsminizi Giriniz" >
 </label> 
 </p>
 <p>
-<label><b>MAİL ADRESİNİZ :</b>
-<input type="email" id="mail" name="mail" placeholder="Mail Adresinizi Giriniz" required>
+<label><b>MAİL ADRESİNİZ : <span class="text-danger">*</span></b>
+<input type="email" id="mail" name="mail" placeholder="Mail Adresinizi Giriniz" >
 </label>
 </p>
 <p>
-<label><b>CİNSİYETİNİZ :</b>
-	<input type="radio" id="erkek" name="cinsiyet" value="Erkek" required> Erkek
+<label><b>CİNSİYETİNİZ : <span class="text-danger">*</span></b>
+	<input type="radio" id="erkek" name="cinsiyet" value="Erkek" > Erkek
 	<input type="radio" id="kadin" name="cinsiyet" value="Kadın"> Kadın
 	<input type="radio" id="diger" name="cinsiyet" value="Diğer"> Diğer
 </p> 
@@ -126,16 +126,17 @@
 						</select>
  </p> 
 <p>
-<label><b>AÇIKLAMA : </b>
-<textarea id="mesaj" name="mesaj" rows="4" cols="50" maxlength="500" required></textarea>
+<label><b>AÇIKLAMA : <span class="text-danger">*</span></b>
+<textarea id="mesaj" name="mesaj" rows="4" cols="50" maxlength="500" ></textarea>
 </label>
 </p>
-<p><button type="submit" id="btnGonder" onclick="gonder()">Gönder</button>  
+<p><button type="submit" id="btnGonder" onclick="Gonder()">Gönder </button>  
 <button id="buton" type="button" value="Temizle" onclick="islemTemizle()">Temizle</button></p>
 </form>
 
   </div>
   </div>
+	
 	<script <script type="text/javascript" src="assets/js/iletisim.js"></script></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
